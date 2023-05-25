@@ -71,7 +71,9 @@ int WinMain()
                     }
                 }
             }
-            dwgDebugSphere(Vector3(0.f), Vector3(DWG_PI * 0.5f), Vector3(0.0f, 0.5f, 1.f));
+            dwgDebugSphere(Vector3(0.f),
+                           Vector3(static_cast<float>(DWG_PI) * 0.5f),
+                           Vector3(0.0f, 0.5f, 1.f));
             // update pos & vel
             for (int i = 0; i < NUM; ++i) {
                 vel[i] = (newPos[i] - pos[i]) / dt;
