@@ -109,7 +109,7 @@ bool dwgInitApp(int32_t width, int32_t height, const char* title)
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
-		g_dwg.window = glfwCreateWindow(1600, 900, "DwG - Game Math", NULL, NULL);
+		g_dwg.window = glfwCreateWindow(1600, 900, title, NULL, NULL);
 		if (!g_dwg.window)
 		{
 			glfwTerminate();
